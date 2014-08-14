@@ -1,5 +1,6 @@
 #original caesar_cipher method from the first Odin Project Ruby assignment
 
+class Caesar
 def caesar_cipher (string, num)
   shift = num % 26 
   
@@ -22,10 +23,12 @@ def caesar_cipher (string, num)
   
   chars.join
 end
+end
 
+c = Caesar.new
 
 print "Enter a phrase to put into secret code: "
 phrase = gets.chomp
 print "Enter a number that represents the distance you want to shift each letter down the alphabet (HINT--Use negative numbers to decode):"
 shift_num = gets.chomp.to_i
-puts caesar_cipher(phrase, shift_num)
+puts c.caesar_cipher(phrase, shift_num)
