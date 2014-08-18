@@ -117,7 +117,7 @@ end
 #p [1,2,3,4,5].my_all? {|x| x > 0}
 #p [1,2,3,4,5].my_all? {|x| x > 1}
 #p [1,2,3,4,5].my_any? {|x| x > 5}
-#p [1,2,3,4,5].my_inject {|running_total, x| running_total + x}
+#p [1,2,3,4,5].my_inject(0) {|running_total, x| running_total + x}
 #p multiply_els([20,2,-3])
 
 
